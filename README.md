@@ -1,8 +1,10 @@
-# Dr. P. Sathish Kumar — General Surgeon Portfolio
+# Dr. P. Sathish Kumar — General & Laparoscopic Surgeon Portfolio
 
-A professional portfolio website for **Dr. P. Sathish Kumar**, General Surgeon (MS General Surgery) and Associate Professor at Government Medical College, Khammam.
+A professional portfolio website for **Dr. P. Sathish Kumar**, General & Laparoscopic Surgeon
+(MBBS, MS General Surgery) and Associate Professor at Government Medical College, Khammam.
 
-Built with pure **HTML, CSS and JavaScript** — no frameworks, no build step. Designed to be shared with hospitals, referring doctors and patients.
+Built with pure **HTML, CSS and JavaScript** — no frameworks, no build step. Designed to be shared
+with hospitals, referring doctors and patients.
 
 ## Live Site
 
@@ -10,13 +12,14 @@ Built with pure **HTML, CSS and JavaScript** — no frameworks, no build step. D
 
 ## Sections
 
-- **Hero** — credentials, registration number, call and appointment CTAs
+- **Hero** — photo, credentials, registration number, call and appointment CTAs
 - **At a glance** — 100+ surgeries, 10 specialities, years in practice, 150+ procedure types
 - **About** — training, clinical experience and teaching role
-- **Expertise & Care** — plain-language care areas for patients
+- **Expertise & Care** — laparoscopic surgery plus eight open-surgery care areas for patients
 - **Procedures** — searchable portfolio of 150 procedures across 10 categories (for hospitals)
 - **Experience** — GMC Khammam, Mahabubnagar, CAIMS Karimnagar, Osmania
 - **Academics** — MS thesis, TSASICON presentations, qualifications
+- **Locations** — consultation hospitals and clinics across Hyderabad
 - **Appointments** — phone, WhatsApp, email and a WhatsApp-powered request form
 - **Medical disclaimer** — informational use only; emergency contact 108
 
@@ -42,6 +45,8 @@ dr-sathish-kumar/
 ├── index.html      # content and sections
 ├── style.css       # clinical light theme, responsive
 ├── script.js       # procedure search/filter, form, animations
+├── assets/
+│   └── dr-sathish.jpg
 └── README.md
 ```
 
