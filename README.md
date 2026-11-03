@@ -19,7 +19,7 @@ with hospitals, referring doctors and patients.
 - **Procedures** — searchable portfolio of 150 procedures across 10 categories (for hospitals)
 - **Experience** — GMC Khammam, Mahabubnagar, CAIMS Karimnagar, Osmania
 - **Academics** — MS thesis, TSASICON presentations, qualifications
-- **Locations** — consultation hospitals and clinics across Hyderabad
+- **Locations** — consultation hospitals and clinics across Hyderabad, Khammam and online
 - **Appointments** — phone, WhatsApp, email and a WhatsApp-powered request form
 - **Medical disclaimer** — informational use only; emergency contact 108
 

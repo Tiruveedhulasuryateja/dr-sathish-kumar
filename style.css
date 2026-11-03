@@ -369,7 +369,28 @@ h1, h2, h3, h4 {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.hero-locations {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--muted);
   margin-bottom: 22px;
+}
+
+.hero-locations svg {
+  color: var(--teal);
+  flex-shrink: 0;
+}
+
+.loc-sep {
+  color: var(--line-strong);
+  font-weight: 300;
 }
 
 .hero-desc {
@@ -908,6 +929,24 @@ h1, h2, h3, h4 {
 
 .location-link:hover {
   background: var(--teal-soft);
+}
+
+.location-card.online {
+  grid-column: 1 / -1;
+  background: var(--teal-soft);
+  border-color: var(--teal-soft-2);
+}
+
+.location-card.online .location-icon {
+  background: #fff;
+}
+
+.location-card.online .location-body h3 {
+  color: var(--teal-deep);
+}
+
+.location-card.online .location-link:hover {
+  background: #fff;
 }
 
 .locations-note {
