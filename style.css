@@ -1,6 +1,6 @@
 /* ============================================================
    Dr. P. Sathish Kumar — General Surgeon Portfolio
-   Light clinical theme · deep teal + warm gold
+   Light clinical theme · dark navy + light blue
    ============================================================ */
 
 *,
@@ -12,23 +12,23 @@
 }
 
 :root {
-  --bg: #f7faf9;
+  --bg: #DBEAFE;
   --surface: #ffffff;
-  --ink: #102a25;
-  --muted: #5d706b;
-  --dim: #8aa09a;
-  --teal: #0f766e;
-  --teal-deep: #0b4f4a;
-  --teal-ink: #083c38;
-  --teal-soft: #e6f4f1;
-  --teal-soft-2: #d2ece7;
-  --gold: #b98245;
-  --gold-soft: #f7efe4;
-  --line: #e3ece9;
-  --line-strong: #cdded9;
-  --shadow-sm: 0 2px 8px rgba(16, 42, 37, 0.05);
-  --shadow-md: 0 16px 40px -18px rgba(16, 42, 37, 0.22);
-  --shadow-lg: 0 30px 70px -30px rgba(16, 42, 37, 0.3);
+  --ink: #172B3A;
+  --muted: #64748B;
+  --dim: #94A3B8;
+  --teal: #2563EB;
+  --teal-deep: #142B4A;
+  --teal-ink: #0B1F38;
+  --teal-soft: #DBEAFE;
+  --teal-soft-2: #BFDBFE;
+  --gold: #2563EB;
+  --gold-soft: #EFF6FF;
+  --line: #DCE5F0;
+  --line-strong: #C7D6E8;
+  --shadow-sm: 0 2px 8px rgba(20, 43, 74, 0.05);
+  --shadow-md: 0 16px 40px -18px rgba(20, 43, 74, 0.22);
+  --shadow-lg: 0 30px 70px -30px rgba(20, 43, 74, 0.3);
   --font-head: "Fraunces", Georgia, serif;
   --font-body: "Inter", system-ui, -apple-system, sans-serif;
   --nav-h: 76px;
@@ -94,7 +94,7 @@ h1, h2, h3, h4 {
 }
 
 .section-tint {
-  background: linear-gradient(180deg, #eef6f4 0%, #f4f9f8 55%, var(--bg) 100%);
+  background: linear-gradient(180deg, #EFF6FF 0%, #F8FAFC 55%, var(--bg) 100%);
 }
 
 .eyebrow {
@@ -145,15 +145,16 @@ h1, h2, h3, h4 {
 }
 
 .btn-primary {
-  background: var(--teal);
-  color: #fff;
-  box-shadow: 0 10px 24px -10px rgba(15, 118, 110, 0.6);
+  background: #B0C4DE;
+  color: #0B1F38;
+  box-shadow: 0 10px 24px -10px rgba(20, 43, 74, 0.28);
 }
 
 .btn-primary:hover {
-  background: var(--teal-deep);
+  background: #9FB4D0;
+  color: #0B1F38;
   transform: translateY(-2px);
-  box-shadow: 0 16px 34px -12px rgba(15, 118, 110, 0.6);
+  box-shadow: 0 16px 34px -12px rgba(20, 43, 74, 0.32);
 }
 
 .btn-outline {
@@ -189,7 +190,7 @@ h1, h2, h3, h4 {
 
 .site-header.scrolled {
   border-bottom-color: var(--line);
-  box-shadow: 0 4px 20px rgba(16, 42, 37, 0.05);
+  box-shadow: 0 4px 20px rgba(20, 43, 74, 0.05);
 }
 
 .nav {
@@ -216,8 +217,8 @@ h1, h2, h3, h4 {
   width: 40px;
   height: 40px;
   border-radius: 12px;
-  background: var(--teal);
-  color: #fff;
+  background: #B0C4DE; /* Light Steel Blue */
+  color: #142B4A;      /* Dark Navy icon */
   box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -258,15 +259,15 @@ h1, h2, h3, h4 {
   margin-left: 10px;
   padding: 11px 20px;
   border-radius: 11px;
-  background: var(--teal);
-  color: #fff;
+  background: #B0C4DE;
+  color: #0B1F38;
   font-weight: 600;
   white-space: nowrap;
 }
 
 .nav-cta:hover {
-  background: var(--teal-deep);
-  color: #fff;
+  background: #9FB4D0;
+  color: #0B1F38;
 }
 
 .nav-toggle {
@@ -301,15 +302,15 @@ h1, h2, h3, h4 {
   position: relative;
   padding: calc(var(--nav-h) + 80px) 0 100px;
   background:
-    radial-gradient(900px 520px at 88% -10%, rgba(15, 118, 110, 0.13), transparent 60%),
-    linear-gradient(180deg, #eef7f4 0%, #f7faf9 78%);
+    radial-gradient(900px 520px at 88% -10%, rgba(37, 99, 235, 0.13), transparent 60%),
+    linear-gradient(180deg, #EFF6FF 0%, #F8FAFC 78%);
   overflow: hidden;
 }
 
 .hero-pattern {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(15, 118, 110, 0.16) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(37, 99, 235, 0.16) 1px, transparent 1px);
   background-size: 26px 26px;
   mask-image: radial-gradient(ellipse 65% 60% at 80% 20%, #000 10%, transparent 75%);
   -webkit-mask-image: radial-gradient(ellipse 65% 60% at 80% 20%, #000 10%, transparent 75%);
@@ -345,14 +346,14 @@ h1, h2, h3, h4 {
   height: 8px;
   border-radius: 50%;
   background: var(--teal);
-  box-shadow: 0 0 0 0 rgba(15, 118, 110, 0.5);
+  box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.5);
   animation: pulse 2.2s infinite;
 }
 
 @keyframes pulse {
-  0%   { box-shadow: 0 0 0 0 rgba(15, 118, 110, 0.45); }
-  70%  { box-shadow: 0 0 0 9px rgba(15, 118, 110, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(15, 118, 110, 0); }
+  0%   { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.45); }
+  70%  { box-shadow: 0 0 0 9px rgba(37, 99, 235, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
 }
 
 .hero-title {
@@ -368,7 +369,7 @@ h1, h2, h3, h4 {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: 	#3B82F6;
   margin-bottom: 10px;
 }
 
@@ -502,15 +503,15 @@ h1, h2, h3, h4 {
   height: 196px;
   border-radius: 50%;
   background:
-    radial-gradient(120px 120px at 30% 20%, #e9f8f4, #d6efe9 60%, #c3e6de 100%);
+    radial-gradient(120px 120px at 30% 20%, #EFF6FF, #DBEAFE 60%, #BFDBFE 100%);
   border: 6px solid #fff;
-  box-shadow: 0 18px 40px -20px rgba(15, 118, 110, 0.5), inset 0 0 0 1px var(--teal-soft-2);
+  box-shadow: 0 18px 40px -20px rgba(37, 99, 235, 0.5), inset 0 0 0 1px var(--teal-soft-2);
 }
 
 .portrait-inner.photo {
   overflow: hidden;
   padding: 0;
-  background: #d6efe9;
+  background: #DBEAFE;
 }
 
 .portrait-inner.photo img {
@@ -815,7 +816,7 @@ h1, h2, h3, h4 {
 }
 
 .expertise-card.featured li::before {
-  background: #f5c97a;
+  background: #93C5FD;
 }
 
 .expertise-card:hover {
@@ -1074,7 +1075,7 @@ h1, h2, h3, h4 {
   outline: none;
   border-color: var(--teal);
   background: #fff;
-  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
 }
 
 .explorer-meta {
@@ -1164,7 +1165,7 @@ h1, h2, h3, h4 {
 }
 
 .chip mark {
-  background: #fdf0d8;
+  background: #DBEAFE;
   color: var(--ink);
   border-radius: 3px;
   padding: 0 1px;
@@ -1575,7 +1576,7 @@ a.contact-card:hover {
   outline: none;
   border-color: var(--teal);
   background: #fff;
-  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
 }
 
 .field input.invalid,
@@ -1709,7 +1710,7 @@ a.contact-card:hover {
   color: #fff;
   font-size: 0.86rem;
   font-weight: 600;
-  box-shadow: 0 14px 34px -12px rgba(15, 118, 110, 0.7);
+  box-shadow: 0 14px 34px -12px rgba(37, 99, 235, 0.7);
   transition: transform 0.25s var(--ease), background 0.25s;
 }
 
@@ -1823,7 +1824,7 @@ a.contact-card:hover {
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--line);
-    box-shadow: 0 20px 40px -20px rgba(16, 42, 37, 0.3);
+    box-shadow: 0 20px 40px -20px rgba(20, 43, 74, 0.3);
     transform: translateY(-10px);
     opacity: 0;
     visibility: hidden;
