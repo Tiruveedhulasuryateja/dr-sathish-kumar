@@ -1,7 +1,8 @@
 # Dr. P. Sathish Kumar — General & Laparoscopic Surgeon Portfolio
 
 A professional portfolio website for **Dr. P. Sathish Kumar**, General & Laparoscopic Surgeon
-(MBBS, MS General Surgery) and Associate Professor at Government Medical College, Khammam.
+(MBBS, MS General Surgery; FIGeS, FALS, FISCP, FMAS) and Assistant Professor at Government
+Medical College, Khammam.
 
 Built with pure **HTML, CSS and JavaScript** — no frameworks, no build step. Designed to be shared
 with hospitals, referring doctors and patients.
@@ -12,15 +13,15 @@ with hospitals, referring doctors and patients.
 
 ## Sections
 
-- **Hero** — photo, credentials, registration number, call and appointment CTAs
+- **Hero** — photo, credentials, fellowships, registration number, call and appointment CTAs
 - **At a glance** — 100+ surgeries, 10 specialities, years in practice, 150+ procedure types
 - **About** — training, clinical experience and teaching role
 - **Expertise & Care** — laparoscopic surgery plus eight open-surgery care areas for patients
 - **Procedures** — searchable portfolio of 150 procedures across 10 categories (for hospitals)
 - **Experience** — GMC Khammam, Mahabubnagar, CAIMS Karimnagar, Osmania
-- **Academics** — MS thesis, TSASICON presentations, qualifications
-- **Locations** — consultation hospitals and clinics across Hyderabad, Khammam and online
-- **Appointments** — phone, WhatsApp, email and a WhatsApp-powered request form
+- **Academics** — MS thesis, TSASICON presentations, fellowships, qualifications
+- **Locations** — six Hyderabad hospitals/clinics plus online video consultation
+- **Appointments** — phone, WhatsApp, email and a WhatsApp request form with date and 9 AM–10 PM time slots
 - **Medical disclaimer** — informational use only; emergency contact 108
 
 ## Privacy

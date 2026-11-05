@@ -451,12 +451,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const formNote = document.getElementById("formNote");
 
   if (form) {
+    const dateField = form.prefDate;
+    if (dateField) {
+      const now = new Date();
+      const minDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+      dateField.min = minDate;
+    }
+
     form.addEventListener("submit", (event) => {
       event.preventDefault();
 
       const name = form.patientName.value.trim();
       const phone = form.patientPhone.value.trim();
       const concern = form.concern.value;
+      const prefDate = form.prefDate ? form.prefDate.value : "";
+      const prefTime = form.prefTime ? form.prefTime.value : "";
       const message = form.message.value.trim();
 
       let valid = true;
@@ -468,9 +477,10 @@ document.addEventListener("DOMContentLoaded", () => {
       setValidity(form.patientName, name.length > 1);
       setValidity(form.patientPhone, /^[6-9]\d{9}$/.test(phone.replace(/[\s-]/g, "")));
       setValidity(form.concern, Boolean(concern));
+      if (form.prefTime) setValidity(form.prefTime, Boolean(prefTime));
 
       if (!valid) {
-        formNote.textContent = "Please enter your name, a valid 10-digit mobile number and a reason for visit.";
+        formNote.textContent = "Please enter your name, a valid 10-digit mobile number, a reason for visit and a preferred time slot.";
         formNote.classList.remove("success");
         return;
       }
@@ -483,12 +493,21 @@ document.addEventListener("DOMContentLoaded", () => {
         `Concern: ${concern}`,
       ];
 
+      if (prefDate) {
+        const parsed = new Date(`${prefDate}T00:00:00`);
+        const prettyDate = Number.isNaN(parsed.getTime())
+          ? prefDate
+          : parsed.toLocaleDateString("en-IN", { weekday: "short", day: "numeric", month: "short", year: "numeric" });
+        lines.push(`Preferred date: ${prettyDate}`);
+      }
+      if (prefTime) lines.push(`Preferred time: ${prefTime}`);
+
       if (message) lines.push(`Message: ${message}`);
 
       const url = `https://wa.me/918639709123?text=${encodeURIComponent(lines.join("\n"))}`;
       window.open(url, "_blank", "noopener");
 
-      formNote.textContent = "WhatsApp is opening with your appointment request…";
+      formNote.textContent = "WhatsApp is opening with your appointment request and preferred slot…";
       formNote.classList.add("success");
       form.reset();
     });

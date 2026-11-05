@@ -426,6 +426,36 @@ h1, h2, h3, h4 {
   font-weight: 600;
 }
 
+.hero-fellowships {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 18px;
+  font-size: 0.82rem;
+}
+
+.hero-fellowships-label {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.fellow {
+  font-weight: 600;
+  color: var(--teal-deep);
+  background: var(--teal-soft);
+  padding: 3px 9px;
+  border-radius: 6px;
+  letter-spacing: 0.03em;
+}
+
+.fellow-sep {
+  color: var(--line-strong);
+}
+
 .sep {
   color: var(--line-strong);
 }
@@ -1333,6 +1363,24 @@ h1, h2, h3, h4 {
   font-size: 0.86rem;
   color: var(--muted);
   line-height: 1.65;
+}
+
+.fellow-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 6px 0 10px;
+}
+
+.fellow-badges span {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--teal-deep);
+  background: var(--teal-soft);
+  border: 1px solid var(--teal-soft-2);
+  padding: 4px 10px;
+  border-radius: 7px;
 }
 
 .research-list {
